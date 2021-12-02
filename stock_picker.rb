@@ -9,6 +9,7 @@ def stock_picker(prices)
             if (sell_price - buy_price) > max then
                 max = sell_price - buy_price
                 buy_day = buy_index
+                # Adding buy_index to compensate for the nested array getting smaller
                 sell_day = sell_index + buy_index
             end
         end
